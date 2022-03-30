@@ -1,0 +1,246 @@
+/*     Features head     */
+
+.features-head{
+    background-color: #047AED;
+    color: #fff;
+    padding: 25px 25px;
+}
+.head-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+h1.lead{
+    font-size: 2.5em !important;
+    margin-bottom: 15px;
+}
+.features-head img{
+    width: 200px;
+    justify-self: flex-end;
+}
+
+
+/*     features sub head     */
+.features-sub-head{
+    background-color: #f4f4f4;
+    padding: 50px 0px;
+}
+.sub-head-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 0.75em;
+
+}
+.features-sub-head img{
+    width: 250px;
+    justify-self: flex-end;
+}
+
+
+
+/*      Features main     */
+.features-main{
+    padding: 35px 0px;
+    color: #333;
+}
+.features-main-grid{
+    font-size: 0.75em;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+.features-main-grid .div1{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+.features-main-grid .div2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+.features-main-grid .div3{
+    grid-column: 5/-1;
+    grid-row: 2/3;
+}
+.features-main-grid .div4{
+    grid-column: 1/3;
+    grid-row: 3/-1;
+}.features-main-grid .div5{
+    grid-column: 3/5;
+    grid-row: 3/-1;
+}.features-main-grid .div6{
+    grid-column: 5/-1;
+    grid-row: 3/-1;
+}
+.features-main-grid .flex{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 35px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*              Docs Styles             */
+
+/*     Docs head     */
+
+.docs-head{
+    background-color: #047AED;
+    color: #fff;
+    padding: 25px 25px;
+}
+.docs-head-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.docs-head img{
+    width: 200px;
+    justify-self: flex-end;
+}
+
+
+/*     Docs Main     */
+.docs-main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.docs-main-grid .div1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 20px 30px;
+}
+.docs-main-grid .div2{
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    margin: 25px 30px;
+}
+.docs-main-grid .div1{
+    background-color: #f4f4f4;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 35px 30px 10px;
+    border-radius: 10px;
+}
+.docs-main h3{
+    font-size: 1.05em;
+    margin: 25px ;
+    margin-left: 0px;
+}
+.docs-main nav{
+    width: 100%;
+    margin-left: 0px;
+}
+.docs-main ul{
+    list-style: none;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+.docs-main .div1 .nav ul li:first-child a{
+    color: #047aed;
+}
+.docs-main .div1 ul li{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 0.75px #333 solid;
+}
+.docs-main ul a{
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95em;
+}
+.docs-main ul a:hover{
+    font-weight: bold;
+}
+
+.docs-main .div2{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 35px 30px 10px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+div.alert{
+    color: #fff;
+    background-color: #5cb85c;
+    font-size: 0.75em;
+    padding: 10px 5px;
+}
+div.alert i{
+    font-size: 25px;
+    margin: 0px 10px;
+}
+.docs-main .div2 h2{
+    font-size: 1em;
+    margin-bottom: 35px;
+}
+.docs-main .div2 h3{
+    font-size: 0.95em;
+}
+.docs-main .div2 p{
+    font-size: 0.75em;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.docs-main  a.btn{
+    padding: 12.5px;
+    font-size: 0.85em;
+}
+.docs-main li{
+    font-size: 0.75em;
+}
+.docs-install-p{
+    margin: 10px 0px !important;
+}
+.docs-main pre{
+    width: 100%;
+    background-color: #333;
+    padding: 10px 15px;
+}
+.docs-main code{
+    font-size: 0.75em;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    Media - Tablets    */
+@media(max-width: 868px){
+    .head-grid, .docs-head-grid{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .sub-head-grid{
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        text-align: center;
+        gap: 15px;
+    }
+    .features-main-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .docs-main-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
